@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Expansion Branding Agency",
   description:
     "EBA is a branding agency, we deliver all your needs for your brand to grow.",
+  icons: "/EBALogo.jpg",
 };
 
 export default function RootLayout({
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
       >
         <main className="flex-grow">{children}</main>
         <Footer />

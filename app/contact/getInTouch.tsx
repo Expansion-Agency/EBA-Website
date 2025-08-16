@@ -66,8 +66,8 @@ export default function GetInTouch() {
       {/* 👇 Socials appear only when animation is done */}
       <div
         ref={socialRef}
-        className={`flex flex-col gap-5 mt-[50vh] p-16 text-center text-2xl text-white/70 max-w-2xl mx-auto transition-opacity duration-700 ${
-          showSocial ? "opacity-100" : "opacity-0"
+        className={`flex flex-col gap-5 mt-[50vh] p-16 text-center items-center text-2xl text-white/70 max-w-2xl mx-auto transition-opacity duration-700 ${
+          showSocial ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         <h1 className="text-5xl font-bold">Follow Us</h1>
