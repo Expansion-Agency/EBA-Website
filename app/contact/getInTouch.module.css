@@ -1,0 +1,19 @@
+.section {
+  position: relative;
+  min-height: 200vh; /* enough space to scroll */
+  background: #f4f0f8;
+}
+
+.elevatorWrapper {
+  position: sticky;
+  top: 30%; /* text stays in place while animating */
+  overflow: hidden; /* hides text when it moves out */
+}
+
+.elevator {
+  display: flex;
+  justify-content: space-around;
+  font-size: 6vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
