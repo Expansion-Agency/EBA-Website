@@ -2,7 +2,7 @@ import React from "react";
 import GetInTouch from "./getInTouch";
 import { IoIosSend } from "react-icons/io";
 
-const page = () => {
+const Contact = () => {
   return (
     <div className="">
       <GetInTouch />
@@ -81,4 +81,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

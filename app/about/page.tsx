@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 
-const Page = () => {
+const About = () => {
   return (
     <div>
       <div className="stuck-grid">
@@ -60,4 +60,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default About;
