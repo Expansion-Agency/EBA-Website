@@ -8,7 +8,7 @@ const Contact = () => {
       <GetInTouch />
       <div className="flex flex-col justify-center my-20 w-1/2 mx-auto">
         <h1 className="text-8xl max-w-2xl text-left mb-2">
-          We'd love to hear from you!
+          {"We'd love to hear from you!"}
         </h1>
         <p className="max-w-lg">
           Whether you have a project in mind, want to collaborate, or just have
@@ -29,7 +29,7 @@ const Contact = () => {
           />
           <textarea
             name="msg"
-            id="msd"
+            id="msg"
             placeholder="Write your message"
             className="border w-xl h-50 rounded-3xl p-4 mb-2"
           ></textarea>
