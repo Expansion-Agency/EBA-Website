@@ -1,7 +1,6 @@
 import React from "react";
 import GetInTouch from "./getInTouch";
 import { IoIosSend } from "react-icons/io";
-import Link from "next/link";
 
 const page = () => {
   return (

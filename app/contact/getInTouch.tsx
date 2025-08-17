@@ -7,7 +7,6 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import Link from "next/link";
 
 export default function GetInTouch() {
   const elevatorLRef = useRef<HTMLDivElement | null>(null);
