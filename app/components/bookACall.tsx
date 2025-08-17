@@ -8,7 +8,7 @@ export default function BookCallButton() {
     <div className="relative inline-block">
       <button
         onClick={() => setOpen(!open)}
-        className="rounded-l-full rounded-r-full w-35 h-15 text-sm bg-gradient-to-b from-blue-900/50 to-purple-900/50 cursor-pointer hover:from-blue-900 transform duration-300 transition ease-in-out"
+        className="rounded-l-full rounded-r-full w-35 h-13 text-sm bg-gradient-to-b from-blue-900/50 to-purple-900/50 cursor-pointer hover:from-blue-900 transform duration-300 transition ease-in-out"
       >
         Book a Call
       </button>

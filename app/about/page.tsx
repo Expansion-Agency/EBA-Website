@@ -42,9 +42,9 @@ const Page = () => {
         <div className="grid-item">Graphic Design</div>
         <div className="grid-item">Web Development</div>
         <div className="grid-item">Web Design</div>
-        <div className="grid-item">Digital Marketing</div>
         <div className="grid-item">3D Design</div>
-        <div className="grid-item">App Development</div>
+        <div className="grid-item">Digital Marketing</div>
+        <div className="grid-item">Web Development</div>
         <div className="grid-item">Branding</div>
         <div className="grid-item">Graphic Design</div>
         <div className="grid-item">Web Development</div>
