@@ -6,32 +6,32 @@ const Contact = () => {
   return (
     <div className="">
       <GetInTouch />
-      <div className="flex flex-col justify-center my-20 w-1/2 mx-auto">
-        <h1 className="text-8xl max-w-2xl text-left mb-2">
+      <div className="flex flex-col justify-center my-10 md:my-20 md:w-1/2 mx-6 md:mx-auto">
+        <h1 className="text-4xl md:text-8xl max-w-2xl text-left mb-2">
           {"We'd love to hear from you!"}
         </h1>
         <p className="max-w-lg">
           Whether you have a project in mind, want to collaborate, or just have
           a question, feel free to reach out. Our team is ready to help.
         </p>
-        <form className="flex flex-col gap-6 mt-20">
+        <form className="flex flex-col gap-3 md:gap-6 mt-10 md:mt-20">
           <input
             type="text"
             name="name"
             placeholder="Enter your name"
-            className="border rounded-full p-4 w-xl"
+            className="border rounded-full p-4 md:w-xl"
           />
           <input
             type="email"
             name="email"
             placeholder="Enter your Email"
-            className="border rounded-full p-4 w-xl"
+            className="border rounded-full p-4 md:w-xl"
           />
           <textarea
             name="msg"
             id="msg"
             placeholder="Write your message"
-            className="border w-xl h-50 rounded-3xl p-4 mb-2"
+            className="border md:w-xl h-50 rounded-3xl p-4 mb-2"
           ></textarea>
           <button
             type="submit"
@@ -41,7 +41,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <section className="flex flex-col md:flex-row justify-between gap- mt-40 my-20 px-6 md:px-20">
+      <section className="flex flex-col md:flex-row justify-between gap-2 md:mt-40 my-20 px-6 md:px-20">
         <div>
           <h3 className="font-semibold text-lg mb-2">Our Office</h3>
           <div className="flex flex-col">

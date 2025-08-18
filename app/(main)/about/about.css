@@ -383,7 +383,6 @@
   }
 
   body {
-    min-block-size: 400vh;
     font-family: system-ui, sans-serif;
   }
 }

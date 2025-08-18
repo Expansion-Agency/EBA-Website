@@ -24,11 +24,11 @@ export const Services = () => {
     },
   ];
   return (
-    <div className="flex items-center justify-between my-10 mx-4">
+    <div className="flex items-center justify-between my-10 md:mx-4">
       {services.map((service, index) => (
         <div
           key={service.id}
-          className={`flex flex-col justify-center p-4 bg-white text-blue-950 rounded-2xl w-90 h-60
+          className={`flex flex-col justify-center md:p-4 bg-white/90 text-blue-950 rounded-2xl md:w-90 md:h-60
             ${
               index === 0
                 ? "rounded-ss-full rounded-se-2xl rounded-ee-2xl rounded-es-2xl"
@@ -40,7 +40,7 @@ export const Services = () => {
                 : ""
             }`}
         >
-          <h2 className="text-3xl font-bold">{service.name}</h2>
+          <h2 className="md:text-3xl font-bold">{service.name}</h2>
           <p>{service.desc}</p>
         </div>
       ))}

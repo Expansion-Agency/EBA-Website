@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./getInTouch.module.css";
 import {
   FaFacebook,
   FaInstagram,
@@ -20,8 +19,8 @@ export default function GetInTouch() {
       const triggerHeight = window.innerHeight * 0.9; // trigger around middle
       const scrolled = window.scrollY;
       const progress = scrolled / triggerHeight;
-
-      const distance = window.innerWidth * 0.5;
+      const multiplier = window.innerWidth < 768 ? 0.7 : 0.5;
+      const distance = window.innerWidth * multiplier;
 
       if (elevatorLRef.current) {
         elevatorLRef.current.style.transform = `translateX(${
@@ -49,35 +48,31 @@ export default function GetInTouch() {
   }, []);
 
   return (
-    <section className="relative min-h-[100vh] bg-gradient-to-b from-blue-800/20 to-purple-950/20">
+    <section className="relative md:min-h-[100vh] bg-gradient-to-b from-blue-800/20 to-purple-950/20">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0e0b23] pointer-events-none" />
 
-      <div className="sticky top-[40%] overflow-hidden pointer-events-none">
+      <div className="sticky top-[20%] md:top-[40%] overflow-hidden pointer-events-none">
         <div className="flex items-center justify-center gap-10 text-[6vw] font-bold whitespace-nowrap">
-          <div ref={elevatorLRef} className={styles.elevatorL}>
-            GET ON
-          </div>
-          <div ref={elevatorRRef} className={styles.elevatorR}>
-            Touch
-          </div>
+          <div ref={elevatorLRef}>GET ON</div>
+          <div ref={elevatorRRef}>Touch</div>
         </div>
       </div>
 
       {/* 👇 Socials appear only when animation is done */}
       <div
         ref={socialRef}
-        className={`flex flex-col z-20 gap-5 mt-[50vh] p-16 text-center items-center text-2xl text-white/70 max-w-2xl mx-auto transition-opacity duration-700 ${
+        className={`flex flex-col z-20 gap-2 md:gap-5 mt-[30vh] md:mt-[50vh] p-16 text-center items-center text-2xl text-white/70 max-w-2xl mx-auto transition-opacity duration-700 ${
           showSocial ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <h1 className="text-5xl font-bold">Follow Us</h1>
-        <div className="flex justify-around items-center gap-6 text-[40px]">
+        <h1 className="md:text-5xl font-bold">Follow Us</h1>
+        <div className="flex justify-around items-center gap-3 md:gap-6">
           <a
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook size={50} />
+            <FaFacebook className="text-[20px] md:text-[50px]" />
           </a>
 
           <a
@@ -85,17 +80,17 @@ export default function GetInTouch() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram size={50} />
+            <FaInstagram className="text-[20px] md:text-[50px]" />
           </a>
 
-          <span className="mx-6 text-[40px] font-light">|</span>
+          <span className="md:mx-6 md:text-[40px] font-light">|</span>
 
           <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter size={50} />
+            <FaTwitter className="text-[20px] md:text-[50px]" />
           </a>
 
           <a
@@ -103,7 +98,7 @@ export default function GetInTouch() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedinIn size={50} />
+            <FaLinkedinIn className="text-[20px] md:text-[50px]" />
           </a>
         </div>
       </div>

@@ -10,39 +10,41 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="flex border-t border-white/30 rounded-t-[20%] flex-col pt-30 pb-5 px-10">
-      <div className="flex justify-between items-start">
-        <div className="flex flex-col ps-10 gap-10 w-full">
+    <div className="flex border-t border-white/30 rounded-t-[20%] flex-col pt-10 md:pt-30 pb-5 px-10">
+      <div className="flex flex-col md:flex-row gap-6 justify-between items-start">
+        <div className="flex flex-col md:ps-10 md:gap-10 gap-4 w-full">
           <Image
             src="/EBALogo.jpg"
             alt="logo"
             width="80"
             height="80"
-            className="bg-transparent rounded-full ms-10"
+            className="bg-transparent rounded-full md:ms-10 w-[50px] md:w-[80px] md:h-[80px]"
           />
-          <div className="flex gap-10">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-10">
             <div className="flex flex-col">
-              <h3 className="font-semibold mb-2">Phone Number</h3>
+              <h3 className="font-semibold text-xs md:text-base md:mb-2">
+                Phone Number
+              </h3>
               <a
                 href="tel:+2012345678"
-                className="text-gray-700 hover:text-purple-500"
+                className="text-gray-700 text-xs md:text-base hover:text-purple-500"
               >
                 +20 123 456 78
               </a>
             </div>
-
             <div className="flex flex-col">
-              <h3 className="font-semibold mb-2">Email</h3>
+              <h3 className="font-semibold text-xs md:text-base md:mb-2">
+                Email
+              </h3>
               <a
                 href="mailto:expansionbrandingagency@gmail.com"
-                className="text-gray-700 hover:text-purple-500"
+                className="text-gray-700 text-xs md:text-base hover:text-purple-500"
               >
                 expansionbrandingagency@gmail.com
               </a>
             </div>
           </div>
         </div>
-
         <div className="w-full flex items-start justify-around text-sm text-white/70">
           <div className="flex flex-col gap-5 justify-center">
             <h2 className="text-gray-700 font-semibold">Quick Links</h2>
@@ -68,10 +70,10 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="border border-white opacity-5 w-full mt-15 mb-5 mx-auto" />
-      <div className="flex justify-between mx-20">
+      <hr className="border border-white opacity-5 w-full mt-5 md:mt-15 mb-5 mx-auto" />
+      <div className="flex justify-between md:mx-20">
         <p className="text-xs">Copyright 2025@EBA</p>
-        <div className="flex items-center gap-10 text-[15px]">
+        <div className="flex items-center gap-2 md:gap-10 text-[15px]">
           <a
             href="https://facebook.com"
             target="_blank"
