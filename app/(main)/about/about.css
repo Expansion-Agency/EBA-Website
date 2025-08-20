@@ -32,7 +32,6 @@
 
   /* background styling */
   background: linear-gradient(135deg, #2e084d, #090121);
-  padding: 2rem;
 
   > .grid-item {
     transform-style: preserve-3d;
@@ -377,12 +376,14 @@
     margin: 0;
   }
 
-  html {
+ /*  html {
     block-size: 100%;
     color-scheme: dark light;
-  }
+  } */
+}
 
-  body {
-    font-family: system-ui, sans-serif;
+@media screen and (max-width: 768px) {
+  .stuck-grid {
+    block-size: 80svh;
   }
 }
