@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
   return (
     <div className="flex border-t border-white/30 rounded-t-[20%] flex-col pt-10 md:pt-30 pb-5 px-10">
-      <div className="flex flex-col md:flex-row gap-6 justify-between items-start">
+      <div className="flex flex-col md:flex-row gap-6 justify-between items-start py-5">
         <div className="flex flex-col md:ps-10 md:gap-10 gap-4 w-full">
           <Image
             src="/EBALogo.jpg"
@@ -46,7 +46,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="w-full flex items-start justify-around text-sm text-white/70">
-          <div className="flex flex-col gap-5 justify-center">
+          <div className="flex flex-col gap-2 md:gap-5 justify-center">
             <h2 className="text-gray-700 font-semibold">Quick Links</h2>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
@@ -54,7 +54,7 @@ export const Footer = () => {
             <Link href="/services">Services</Link>
             <Link href="/contact">Contact Us</Link>
           </div>
-          <div className="flex flex-col gap-5 justify-center">
+          <div className="flex flex-col gap-2 md:gap-5 justify-center">
             <h2 className="text-gray-700 font-semibold">Services</h2>
             <Link href="/services">Web Development</Link>
             <Link href="/services">UI/Ux Design</Link>
@@ -63,15 +63,15 @@ export const Footer = () => {
             <Link href="/services">Mobile App Development</Link>
             <Link href="/services">3D Design</Link>
           </div>
-          <div className="flex flex-col gap-5 justify-center">
+          <div className="flex flex-col gap-2 md:gap-5 justify-center">
             <h2 className="text-gray-700 font-semibold">Legal</h2>
             <Link href="/services">Term of Services</Link>
             <Link href="/services">Privacy Policy</Link>
           </div>
         </div>
       </div>
-      <hr className="border border-white opacity-5 w-full mt-5 md:mt-15 mb-5 mx-auto" />
-      <div className="flex justify-between md:mx-20">
+      <hr className="border border-white opacity-5 w-full md:mt-9 mx-auto" />
+      <div className="flex justify-between py-3 md:mx-20">
         <p className="text-xs">Copyright 2025@EBA</p>
         <div className="flex items-center gap-2 md:gap-10 text-[15px]">
           <a

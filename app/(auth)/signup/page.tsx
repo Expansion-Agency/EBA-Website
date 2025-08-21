@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignUp() {
   const [form, setForm] = useState({
@@ -70,16 +72,19 @@ export default function SignUp() {
       </button>
       <div className="flex items-center justify-between">
         <p>OR</p>
-        <Link href="/signin" className="flex text-xs justify-end">
+        <Link
+          href="/signin"
+          className="flex text-xs justify-end hover:underline"
+        >
           Already have an account?
         </Link>
       </div>
 
       <hr className="border-[0.5] border-white opacity-40 w-full mx-auto" />
-
-      <Link href="/signup" className="flex font-bold justify-center">
-        google..
-      </Link>
+      <button className="flex items-center justify-center gap-3 p-3 bg-white rounded-full hover:shadow-2xl transition duration-300 ease-in-out cursor-pointer text-purple-950">
+        <FcGoogle size={20} />
+        Continue with gmail
+      </button>
     </form>
   );
 }

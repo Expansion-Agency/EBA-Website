@@ -88,23 +88,61 @@ const About = () => {
             className="object-cover rounded-4xl w-[90%] h-[200px] md:w-3/4 md:h-[600px] mx-10 md:mx-auto"
           />
         </div>
-        <div className="flex flex-col items-center bg-pink-50 text-purple-950 pt-20 md:pt-70 w-full">
+        <div className="flex flex-col items-center bg-pink-50/80 text-purple-950 pt-20 md:pt-70 w-full">
           <div className="flex flex-col md:flex-row justify-around p-10 mb-10 w-full">
-            <div className="flex items-center gap-4">
-              <p className="text-7xl font-bold">3</p>
+            <div className="flex items-center gap-4 font-bold">
+              <p className="text-5xl md:text-7xl">3</p>
               <p>Years of experience</p>
             </div>
-            <div className="flex items-center gap-4">
-              <p className="text-7xl font-bold">6</p>
+            <div className="flex items-center gap-4 font-bold">
+              <p className="text-5xl md:text-7xl">6</p>
               <p>Services We Excel In</p>
             </div>
-            <div className="flex items-center gap-4">
-              <p className="text-7xl font-bold">3</p>
+            <div className="flex items-center gap-4 font-bold">
+              <p className="text-5xl md:text-7xl">3</p>
               <p>Different Countries</p>
             </div>
           </div>
           <hr className="w-3/4 mx-auto border-1" />
-          jhskjfhdjfhsd
+          <div className="flex items-center justify-around w-full py-10">
+            <div className="flex flex-col gap-5">
+              <h2 className="text-5xl font-bold">Our Philosophy</h2>
+              <p className="text-lg max-w-2xl">
+                At EBA, we believe powerful brands are built on purpose,
+                creativity, and strategy. We design with precision and
+                intention, blending innovation with technology to craft
+                experiences that inspire trust, connect with audiences, and
+                drive growth.
+              </p>
+            </div>
+            {/*in the website the image smaller in height I want the height to be longer*/}
+            <Image
+              src="/p.jpg"
+              alt="img"
+              width="320"
+              height="300"
+              className="rounded-2xl"
+            />
+          </div>
+        </div>
+        <div className="flex items-center justify-around w-full">
+          <div className="flex flex-col">
+            <h2 className="font-bold text-5xl">Meet Our Founder</h2>
+            <Image src="/founder.jpg" alt="Ahmad" width="200" height="100" />
+          </div>
+          <div>
+            <p className="max-w-xl">
+              Behind EBA is a vision driven by creativity, innovation, and
+              purpose. Our founder, Ahmad Sudik, established EBA with the belief
+              that branding is more than design—it’s about building meaningful
+              connections and unforgettable experiences. With a passion for
+              blending artistry and strategy, Ahmad Sudik set out to create an
+              agency where ideas transform into powerful brand stories. Today,
+              that vision continues to guide everything we do, inspiring our
+              team to push boundaries, embrace innovation, and deliver work that
+              makes a lasting impact.
+            </p>
+          </div>
         </div>
       </div>
     </>

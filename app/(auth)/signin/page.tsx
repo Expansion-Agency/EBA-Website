@@ -34,7 +34,10 @@ export default function SignIn() {
         required
         className="p-3 rounded-full border focus:outline-none"
       />
-      <Link href="/forgetPassword" className="flex text-xs justify-end">
+      <Link
+        href="/forgetPassword"
+        className="flex text-xs justify-end hover:underline"
+      >
         Forgot Password?
       </Link>
 
@@ -46,13 +49,19 @@ export default function SignIn() {
       </button>
       <div className="flex items-center justify-between">
         <p>OR</p>
-        <Link href="/signup" className="flex text-xs justify-end">
+        <Link
+          href="/signup"
+          className="flex text-xs justify-end hover:underline"
+        >
           {"Don't have an account?"}
         </Link>
       </div>
       <hr className="border-[0.5] border-white opacity-40 w-full mb-1 mx-auto" />
 
-      <Link href="/signup" className="flex bg-purple-100/5 p-2 justify-center">
+      <Link
+        href="/signup"
+        className="flex rounded-full hover:shadow-xl transform duration-300 ease-in-out bg-purple-100/5 p-2 justify-center"
+      >
         Sign Up
       </Link>
     </form>
