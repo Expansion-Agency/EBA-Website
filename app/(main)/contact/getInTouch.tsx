@@ -52,7 +52,7 @@ export default function GetInTouch() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0e0b23] pointer-events-none" />
 
       <div className="sticky top-[20%] md:top-[40%] overflow-hidden pointer-events-none">
-        <div className="flex items-center justify-center gap-10 text-[6vw] font-bold whitespace-nowrap">
+        <div className="flex items-center justify-center gap-10 text-[8vw] mb:text-[6vw] font-bold whitespace-nowrap">
           <div ref={elevatorLRef}>GET ON</div>
           <div ref={elevatorRRef}>Touch</div>
         </div>
@@ -76,7 +76,7 @@ export default function GetInTouch() {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/expansionbrandingagency"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,7 +94,7 @@ export default function GetInTouch() {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/expansion-branding-agency"
             target="_blank"
             rel="noopener noreferrer"
           >

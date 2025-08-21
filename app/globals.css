@@ -25,3 +25,46 @@ body {
   /*   font-family: Arial, Helvetica, sans-serif;
  */
 }
+
+.masked-text {
+  color: transparent;
+  background-image: url("https://images.pexels.com/photos/31414508/pexels-photo-31414508.jpeg");
+  background-size: 200%; /* Enlarged for smooth animation */
+  background-position: 0 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 15s infinite alternate linear;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@font-face {
+  font-family: "TheFont";
+  src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2")
+    format("woff2");
+  font-weight: 100 900; /* variable font range */
+  font-display: swap;
+}
+
+@keyframes letter-breathe {
+  0%,
+  100% {
+    font-variation-settings: "wght" 100;
+  }
+  50% {
+    font-variation-settings: "wght" 900;
+  }
+}
+
+.breathe-text {
+  font-family: "TheFont", sans-serif;
+  animation: letter-breathe 3s ease-in-out infinite;
+}

@@ -88,7 +88,7 @@ const About = () => {
             className="object-cover rounded-4xl w-[90%] h-[200px] md:w-3/4 md:h-[600px] mx-10 md:mx-auto"
           />
         </div>
-        <div className="flex flex-col items-center bg-pink-50/80 text-purple-950 pt-20 md:pt-70 w-full">
+        <div className="flex flex-col items-center bg-purple-100 text-purple-950 pt-20 md:pt-70 w-full">
           <div className="flex flex-col md:flex-row justify-around p-10 mb-10 w-full">
             <div className="flex items-center gap-4 font-bold">
               <p className="text-5xl md:text-7xl">3</p>
@@ -104,8 +104,8 @@ const About = () => {
             </div>
           </div>
           <hr className="w-3/4 mx-auto border-1" />
-          <div className="flex items-center justify-around w-full py-10">
-            <div className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-around w-full py-10">
+            <div className="flex flex-col p-5 gap-5">
               <h2 className="text-5xl font-bold">Our Philosophy</h2>
               <p className="text-lg max-w-2xl">
                 At EBA, we believe powerful brands are built on purpose,
@@ -125,7 +125,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="flex items-center justify-around w-full">
+        <div className="flex flex-col md:flex-row p-5 items-center justify-around w-full">
           <div className="flex flex-col">
             <h2 className="font-bold text-5xl">Meet Our Founder</h2>
             <Image src="/founder.jpg" alt="Ahmad" width="200" height="100" />

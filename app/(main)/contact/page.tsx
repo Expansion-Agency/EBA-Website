@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="">
       <GetInTouch />
       <div className="flex flex-col justify-center my-10 md:my-20 md:w-1/2 mx-6 md:mx-auto">
-        <h1 className="text-4xl md:text-8xl max-w-2xl text-left mb-2">
+        <h1 className="text-4xl md:text-8xl max-w-2xl text-left mb-4">
           {"We'd love to hear from you!"}
         </h1>
         <p className="max-w-lg">

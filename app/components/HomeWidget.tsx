@@ -12,7 +12,7 @@ const HomeWidget = () => {
       <div className="relative z-10 md:h-170">
         <Header />
         <div className="flex flex-col ml-10 md:ml-20 w-fit h-full justify-center text-white/60">
-          <h1 className="uppercase text-2xl md:text-8xl max-w-20 font-bold md:leading-30">
+          <h1 className="breathe-text masked-text uppercase text-2xl md:text-8xl max-w-350 font-bold md:leading-30">
             Expansion Branding Agency
           </h1>
           <p className="tracking-widest text-xs max-w-50 md:max-w-fit md:text-base text-purple-500">

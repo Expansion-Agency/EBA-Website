@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <>
       <HomeWidget />
-      <Services />
+      {/*       <Services />
+       */}{" "}
     </>
   );
 }
